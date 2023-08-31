@@ -10,31 +10,31 @@ The dataset only has data collected from Jan 1, 2017 to Jan 1, 2018. Thus, songs
 likely be seen as less popular than they truly were, and songs popular in the middle of the collection date range (or released recently after 
 Jan 1, 2017) will likely been seen as more popular than they truly were. This will impact the model, and will introduce bias.
 
-## Model Performance
-
+### Training Data
 Validation Accuracy:  0.9628631124890477
 Classification Report on Validation Data:
-                   precision    recall  f1-score   support
 
-        1-2 weeks       0.70      0.34      0.46       398
- less than a week       0.74      0.73      0.73       596
-more than 2 weeks       0.98      0.99      0.98     13843
+|                   | precision | recall | f1-score | support |
+|-------------------|-----------|--------|----------|---------|
+| 1-2 weeks         | 0.70      | 0.34   | 0.46     | 398     |
+| less than a week  | 0.74      | 0.73   | 0.73     | 596     |
+| more than 2 weeks | 0.98      | 0.99   | 0.98     | 13843   |
+| accuracy          |           |        | 0.96     | 14837   |
+| macro avg         | 0.80      | 0.69   | 0.72     | 14837   |
+| weighted avg      | 0.96      | 0.96   | 0.96     | 14837   |
 
-         accuracy                           0.96     14837
-        macro avg       0.80      0.69      0.72     14837
-     weighted avg       0.96      0.96      0.96     14837
+Test Accuracy: 0.9615151310911909
 
-Test Accuracy:  0.9615151310911909
-Classification Report on Test Data:
-                   precision    recall  f1-score   support
+### Classification Report on Test Data
 
-        1-2 weeks       0.71      0.32      0.44       436
- less than a week       0.71      0.70      0.71       525
-more than 2 weeks       0.97      0.99      0.98     13876
-
-         accuracy                           0.96     14837
-        macro avg       0.80      0.67      0.71     14837
-     weighted avg       0.96      0.96      0.96     14837
+|                   | precision | recall | f1-score | support |
+|-------------------|-----------|--------|----------|---------|
+| 1-2 weeks         | 0.71      | 0.32   | 0.44     | 436     |
+| less than a week  | 0.71      | 0.70   | 0.71     | 525     |
+| more than 2 weeks | 0.97      | 0.99   | 0.98     | 13876   |
+| accuracy          |           |        | 0.96     | 14837   |
+| macro avg         | 0.80      | 0.67   | 0.71     | 14837   |
+| weighted avg      | 0.96      | 0.96   | 0.96     | 14837   |
 
 Explained:
 
