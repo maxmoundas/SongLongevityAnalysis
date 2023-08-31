@@ -12,6 +12,7 @@ Jan 1, 2017) will likely been seen as more popular than they truly were. This wi
 
 ### Training Data
 Validation Accuracy:  0.9628631124890477
+
 Classification Report on Validation Data:
 
 |                   | precision | recall | f1-score | support |
