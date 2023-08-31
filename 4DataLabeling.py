@@ -5,8 +5,8 @@
 import pandas as pd
 
 # Read the dataset
-input_file_path = r"datasets\ranking_processed.csv"
-output_file_path = r"datasets\labeled.csv"
+input_file_path = r"datasets\data_cleaned_us_processed.csv"
+output_file_path = r"datasets\data_cleaned_us_processed_labeled.csv"
 df = pd.read_csv(input_file_path)
 
 # Convert the 'Date' column to datetime format
@@ -50,3 +50,5 @@ df.drop(['CumCount', 'CumCount_Max'], axis=1, inplace=True)
 
 # Saving the labeled dataset
 df.to_csv(output_file_path, index=False)
+
+print(f"\nData labeling completed. Saved to: '{output_file_path}'")

@@ -1,5 +1,5 @@
 # SongLongevityAnalysis
-Analyze and predict how long songs stay in the top 3, 5, 10, or 20 rankings.
+Analyze and predict how long songs stay in the top 3, 5, 10, 20, or 50 rankings.
 
 The dataset used for this project is stored as a zip file in this repo. Extract the zip file to the datasets directory.
 

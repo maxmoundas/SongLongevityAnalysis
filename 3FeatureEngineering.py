@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
 # Load the Data
-input_file_path = r"datasets\us_data.csv"
-output_file_path = r"datasets\ranking_processed.csv"
+input_file_path = r"datasets\data_cleaned_us.csv"
+output_file_path = r"datasets\data_cleaned_us_processed.csv"
 df = pd.read_csv(input_file_path)
 
 # Sort the dataset by Date and then by Position to ensure it's in chronological order
@@ -87,4 +87,4 @@ df.fillna(0, inplace=True)
 # Save the processed dataset
 df.to_csv(output_file_path, index=False)
 
-print("Feature Engineering Completed!")
+print(f"\nFeature engineering completed. Saved to: '{output_file_path}'")
