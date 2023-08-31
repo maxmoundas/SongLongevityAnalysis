@@ -5,10 +5,7 @@ The dataset used for this project is stored as a zip file in this repo. Extract 
 
 The dataset is sourced from: https://www.kaggle.com/datasets/edumucelli/spotifys-worldwide-daily-song-ranking?resource=download
 
-## Limitations
-The dataset only has data collected from Jan 1, 2017 to Jan 1, 2018. Thus, songs popular outside of the collection dates will 
-likely be seen as less popular than they truly were, and songs popular in the middle of the collection date range (or released recently after 
-Jan 1, 2017) will likely been seen as more popular than they truly were. This will impact the model, and will introduce bias.
+## Model Performance
 
 ### Training Data
 Validation Accuracy:  0.9628631124890477
@@ -82,3 +79,8 @@ Summary:
 The model is performing very well when predicting songs that will last "more than 2 weeks" on the charts, with both high precision and recall. However, it has a harder time predicting songs that will be on the charts for "1-2 weeks". This could be due to a variety of factors, such as class imbalance (which seems evident given the high count for "more than 2 weeks").
 
 One thing to consider is that while accuracy is high, it might be misleading in the presence of class imbalance. This is because if most of the songs belong to the "more than 2 weeks" class, a model that simply predicts this class for every song would still achieve a high accuracy. Therefore, in such scenarios, precision, recall, and F1-score for each class become important metrics to evaluate model performance.
+
+## Limitations
+The dataset only has data collected from Jan 1, 2017 to Jan 1, 2018. Thus, songs popular outside of the collection dates will 
+likely be seen as less popular than they truly were, and songs popular in the middle of the collection date range (or released recently after 
+Jan 1, 2017) will likely been seen as more popular than they truly were. This will impact the model, and will introduce bias.
