@@ -2,6 +2,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
+import joblib  # For saving and loading the model
+import os
 
 # Load your data
 input_file_path = r"datasets\data_cleaned_us_processed_labeled.csv"
@@ -37,6 +39,14 @@ grid_search.fit(X_train, y_train)
 
 # Use the model with the best hyperparameters found in the grid search
 best_clf = grid_search.best_estimator_
+
+# Save the trained model to the 'models' directory
+if not os.path.exists('models'):  # Check if 'models' directory doesn't exist
+    os.makedirs('models')         # If not, create it
+
+model_save_path = 'models/trained_model.pkl'
+joblib.dump(best_clf, model_save_path)
+print(f"Model saved to {model_save_path}")
 
 # Validate the model's performance on the validation set
 y_val_pred = best_clf.predict(X_val)
