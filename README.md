@@ -5,6 +5,22 @@ The dataset used for this project is stored as a zip file in this repo. Extract 
 
 The dataset is sourced from: https://www.kaggle.com/datasets/edumucelli/spotifys-worldwide-daily-song-ranking?resource=download
 
+## Cross-Validation
+
+Accuracy scores for the 10-fold cross-validation:
+Fold-1: 0.9644
+Fold-2: 0.9468
+Fold-3: 0.9612
+Fold-4: 0.9584
+Fold-5: 0.9512
+Fold-6: 0.9536
+Fold-7: 0.9608
+Fold-8: 0.9539
+Fold-9: 0.9610
+Fold-10: 0.9554
+
+Average Accuracy from 10-fold cross-validation: 0.9567 +/- 0.0052
+
 ## Model Performance
 
 ### Training Data
