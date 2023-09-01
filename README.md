@@ -1,6 +1,6 @@
 # SongLongevityAnalysis
 
-An application designed to analyze and predict the longevity of songs in various top-ranking brackets (e.g., top 3, 5, 10, 20, 50).
+A machine learning application designed to analyze and predict the longevity of songs in various top-ranking brackets (e.g., top 3, 5, 10, 20, 50).
 
 ## Introduction
 
